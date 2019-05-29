@@ -16,3 +16,7 @@ def valve_OnOff(Pin):
         GPIO.output(18, GPIO.LOW)
         print("GPIO LOW (off), valve should be on")
         time.sleep(10)
+
+valve_OnOff(18)
+
+GPIO.cleanup()
